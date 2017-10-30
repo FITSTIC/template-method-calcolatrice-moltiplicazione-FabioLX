@@ -9,8 +9,7 @@ namespace TemplatePatternMoltiplicazione
     class Program
     {
       
-        int modelloCalc;
-        int result;
+      
         static void Main(string[] args)
         {
             //ULTIMO STEP in classe main creo gli oggetti
@@ -18,7 +17,7 @@ namespace TemplatePatternMoltiplicazione
             calcModern.FaiOperazione(2, 2);
 
             var calcAntica = new CalcolatriceAntica();
-            calcModern.FaiOperazione(2, 3);
+            calcAntica.FaiOperazione(2, 3);
 
 
 
@@ -84,7 +83,7 @@ namespace TemplatePatternMoltiplicazione
            
             for (int i = 0; i < this.valore2; i++)
             {
-                this.result = this.valore1;
+                this.result += this.valore1;
 
             }
         }
